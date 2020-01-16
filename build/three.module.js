@@ -23918,7 +23918,7 @@ function WebGLRenderer( parameters ) {
 
 	// xr
 
-	var xr = ( typeof navigator !== 'undefined' && 'xr' in navigator ) ? new WebXRManager( _this, _gl ) : new WebVRManager( _this );
+	var xr = new WebVRManager( _this );
 
 	this.xr = xr;
 
@@ -32815,6 +32815,7 @@ CircleBufferGeometry.prototype.constructor = CircleBufferGeometry;
 
 
 var Geometries = /*#__PURE__*/Object.freeze({
+	__proto__: null,
 	WireframeGeometry: WireframeGeometry,
 	ParametricGeometry: ParametricGeometry,
 	ParametricBufferGeometry: ParametricBufferGeometry,
@@ -33843,6 +33844,7 @@ LineDashedMaterial.prototype.copy = function ( source ) {
 
 
 var Materials = /*#__PURE__*/Object.freeze({
+	__proto__: null,
 	ShadowMaterial: ShadowMaterial,
 	SpriteMaterial: SpriteMaterial,
 	RawShaderMaterial: RawShaderMaterial,
@@ -38152,6 +38154,7 @@ SplineCurve.prototype.fromJSON = function ( json ) {
 
 
 var Curves = /*#__PURE__*/Object.freeze({
+	__proto__: null,
 	ArcCurve: ArcCurve,
 	CatmullRomCurve3: CatmullRomCurve3,
 	CubicBezierCurve: CubicBezierCurve,
